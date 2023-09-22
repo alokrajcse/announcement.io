@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+}
+
+/* Header Styles */
+header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Data Container Styles for Announcements */
+#data-container {
+  display: flex;
+  flex-direction: column; /* Center the announcements vertically */
+  align-items: center; /* Center the announcements horizontally */
+      padding: 15px;
+    margin: 10px;
+}
+
+.announcement-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%; /* Ensure the announcements fill the available width */
+  margin-bottom: 10px; /* Add some space between announcements */
+}
+
+.announcement-card h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.announcement-card p {
+  margin: 5px 0;
+}
+
+/* Categories Container Styles (Optional) */
+#categories-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+.category {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.category:hover {
+  background-color: #0056b3;
+}
+
+/* Loading Animation Styles */
+#loading-animation {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  height: 3%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+footer h3 {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+footer h3 em {
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .announcement-card {
+    padding: 8px;
+  }
+
+  #data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .announcement-card h3 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .announcement-card p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  /* Add styles for categories and other elements as needed for mobile view */
+}
