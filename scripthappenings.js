@@ -5,6 +5,7 @@ let announcementData = [];
 
 loadingAnimation.style.display = 'block';
 
+
 fetch('https://script.google.com/macros/s/AKfycbwxEbCAzFppw0CZW6UPkMb-z_7Tj_bJPm6NHGDcFerA-ilDYLtABM4S9gqbfVon3QV0/exec')
   .then(response => response.json())
   .then(data => {
